@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #IDselector{
+            text-align: center;
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: blue;
+        }
+        div.InClass{
+            color: brown;
+            background-color: orange;
+        }
+        article>div>p{
+            color: brown;
+            background-color: rgb(217, 255, 0);
+        }
+        section p{
+            color: blue;
+            background-color: turquoise;
+        }
+        section li:nth-child(1){
+            font-weight: bold;
+        }
+        section li{
+            cursor: pointer;
+            background-color:gray;
+            color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            width: 150px;
+        }
+        section li:hover{
+            cursor: pointer;
+            background-color:rgb(228, 109, 109);
+            color: aqua;
+        }
+        a:link,a:visited{
+            background-color:gray;
+            color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            text-decoration: none;
+            padding:2mm;
+        }
+        a:hover,a:active{
+            background-color:rgb(228, 109, 109);
+            color: aqua;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="IDselector">Selectors</h1>
+    <h2>Elements with class selector</h2>
+    <article>
+        <div class="InClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe nostrum, ipsa illo aspernatur culpa harum, officiis, repudiandae ipsum eaque optio inventore. Itaque reprehenderit reiciendis quia, eligendi consequuntur sint unde!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deserunt modi natus quisquam, dolorem optio incidunt corporis neque aut vero nemo et nam eligendi velit nihil eius autem iusto quam?</div>
+    </article>
+    <h2>Child Selector</h2>
+    <article>
+    <div><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non commodi corporis quibusdam ut aliquam, laudantium omnis incidunt. Unde beatae ipsum blanditiis dolores repellat neque voluptates minus fugiat consequatur obcaecati.
+        </div></p>
+    </article>
+    <h2>Descendent Selector</h2>
+    <section>
+        <div><span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus omnis ducimus minima qui, sapiente non eveniet quis debitis, tempore veniam illo necessitatibus quae perferendis delectus earum facere deserunt eaque voluptatem?</p>
+        </span></div>
+    </section>
+    <h2>Pseudo-Selectors</h2>
+    <section>
+        <ol>
+            <li>Continue</li>
+            <li>New Game</li>
+            <li>High Scores</li>
+            <li>Settings</li>
+        </ol>
+    </section>
+    <br>
+    <footer>
+        <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">More on Selectors</a>
+    </footer>
+</body>
+</html>
