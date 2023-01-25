@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            background-color:bisque;
+        }
+        #Box{
+            margin:40px 40px 40px 250px;
+            border:2px solid black;
+            padding:10px;
+            background-color: greenyellow;
+            width: 300px;
+            box-sizing:margin-box ;
+        }
+        #Box2{
+            margin:100px 40px 40px 250px;
+            border:2px solid black;
+            padding:10px;
+            background-color: greenyellow;
+            color: red;
+            width: 300px;
+            box-sizing:border-box;
+        }
+        .OverflowBox{
+            margin:100px 40px 40px 250px;
+            border:2px solid black;
+            padding:10px;
+            background-color: greenyellow;
+            width: 300px;height:100px;
+            box-sizing:border-box;
+            overflow: auto;
+        }
+        p{
+            background-color: yellow;
+        }
+        body{
+            background:url(https://d7hftxdivxxvm.cloudfront.net/?height=767&quality=80&resize_to=fit&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=767) no-repeat center; 
+            background-size:cover;height:1200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin:0px 0px 0px 270px;width: 220px">The Box Model</h1>
+    <div id="Box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis enim, iure earum est nobis possimus doloribus quam! Ea, illo architecto nisi adipisci natus amet doloribus a nihil deleniti excepturi?</p>
+    </div>
+    <div id="Box2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis enim, iure earum est nobis possimus doloribus quam! Ea, illo architecto nisi adipisci natus amet doloribus a nihil deleniti excepturi?</p>
+    </div>
+    <div class="OverflowBox">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis enim, iure earum est nobis possimus doloribus quam! Ea, illo architecto nisi adipisci natus amet doloribus a nihil deleniti excepturi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis enim, iure earum est nobis possimus doloribus quam! Ea, illo architecto nisi adipisci natus amet doloribus a nihil deleniti excepturi?</p>
+    </div>
+</body>
+</html>
