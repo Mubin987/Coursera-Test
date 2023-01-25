@@ -1,0 +1,21 @@
+section{
+    color:blue;
+    text-align: center;
+}
+h1,h2{
+    color: brown;
+    text-align: center;
+    text-decoration: underline;
+}
+div span{
+    background-color: yellow;
+}
+div #win{
+    background-color:bisque;
+}
+p.classs{
+    background-color:lightblue 
+}
+div p{
+    background-color: lightpink;
+}
