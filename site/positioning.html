@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+          *{
+            box-sizing: border-box;
+          }
+          div{
+            background-color:lightblue;
+            
+          }
+          #p1{
+            width:600px;
+            height:30px;
+            background-color:blue;
+            border:1px solid black;
+          }
+          #p2{
+            width:600px;
+            height:30px;
+            background-color:green;
+             border:1px solid black;
+            float:right;
+          }
+          #p3{
+            width:600px;
+            height:30px;
+            background-color:red;
+             border:1px solid black;
+            clear:left;
+          }
+          #p4{
+            width:600px;
+            height:30px;
+            background-color:yellow;
+             border:1px solid black;
+            float:right;
+          }
+          #c1{
+            float:left;
+            border:2px solid black;
+            width:50%;
+            padding:50px;
+            background-color:grey;
+          }
+          #c2{
+            float:left;
+            border:2px solid black;
+            width:50%;
+            padding:50px;
+            background-color:grey;
+          }
+          p{
+            float:left;
+          }
+          p.relpos{
+            background-color: black;
+            position: relative;
+            height:30px;
+            width:30px;
+            margin-top: 0px;
+            top:10px;
+            left:10px
+          }
+          .abpos{
+            background-color:bisque;
+            position: absolute;
+            height:50px;
+            width:80px;
+            margin:0px;
+            top:0px;
+            left:500px
+          }
+          section{
+            clear:left;
+          }
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positioning</title>
+    </head>
+    <body>
+        <h1>Positioning through Floating</h1>
+          <div>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+           <section>Positioning through floating. </section>
+          </div>
+        <h2>Two column Design<h2>
+         <div>
+            <p id="c1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p id="c2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+           <section>Positioning through floating of 2 column design. </section>
+          </div>
+          <h2>Relative Positioning</h2>
+          <div>
+            <p class="relpos"></p>
+            <p class="abpos">Absolute positioning</p>
+           <section>Positioning.</section>
+          </div>
+    </body> 
+</html>

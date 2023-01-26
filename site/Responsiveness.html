@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        p{
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            width:90%;
+            height:200px;
+        }
+        #p1{
+            height: 200px;
+            width:1000px;
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 0px;
+        }
+        #p2{
+            margin-top: 0px;
+            height: 200px;
+            width:1000px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .row{
+            width:100%;
+        }
+        @media (min-width:1200px){
+            #p1{
+            height: 300px;
+            width:80%;
+        }
+        #p2{
+            height: 300px;
+            width:80%;
+        }
+        .col-l-2{
+            border:2px solid brown;
+            float: left;
+            width:16.66%;
+        }
+        }
+        @media (min-width:992px) and (max-width:1199px){
+            #p1{
+            width:900px;
+        }
+        #p2{
+            width:900px;
+        }
+        .col-m-4{
+            border:2px solid brown;
+            float: left;
+            width:33.33%;
+        }
+        }
+        @media (max-width:991px){
+            #p1{
+            height: 40%;
+            width:80%;
+        }
+        #p2{
+            height: 40%;
+            width:80%;
+        }
+        .col-s-6{
+            border:2px solid brown;
+            float: left;
+            width:50%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Media Queries</h1>
+    <div>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia at quibusdam laboriosam est, porro eos pariatur sapiente maxime. Sed, praesentium dolorem perspiciatis pariatur sunt doloremque veniam qui itaque neque!</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quam esse numquam natus dicta. Molestias unde vitae ab necessitatibus. Quibusdam laudantium doloremque assumenda dicta, asperiores explicabo accusantium tempora architecto similique!</p>
+    </div>
+    <h1 style="text-align: center; margin:bottom 15px;">Responsive Design</h1>
+    <div class="row">
+        <p class="col-s-6 col-m-4 col-l-2">Item 1</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 2</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 3</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 4</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 5</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 6</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 7</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 8</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 9</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 10</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 11</p>
+        <p class="col-s-6 col-m-4 col-l-2">Item 12</p>
+    </div>
+</body>
+</html>
