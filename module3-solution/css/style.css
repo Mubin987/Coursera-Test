@@ -1,0 +1,13 @@
+#header-nav{
+    background-color: gray;
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+#logo{
+    background-image: url('../logo.PNG') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin:10px
+}
