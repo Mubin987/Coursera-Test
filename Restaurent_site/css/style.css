@@ -8,7 +8,7 @@ h1{
 #logo {
     background: url('../logo.PNG') no-repeat;
     width: 100px;
-    height: 100px;
+    height: 144px;
     margin:10px 20px 10px 0px;
 }
 .navbar-brand a:hover ,.navbar-brand a:focus{
