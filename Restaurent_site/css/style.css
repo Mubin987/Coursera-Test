@@ -1,7 +1,11 @@
+body{
+    background-color: yellow;
+}
 
 h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: red;
+    color: black;
+    text-shadow: 3px 3px 3px maroon;
 }
 #logo {
     background: url('../logo.PNG') no-repeat;
@@ -13,10 +17,57 @@ h1{
     text-decoration: none;
 }
 #header-nav{
-    background-color: gray;
+    background-color: rgb(241, 86, 86);
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
+.navbar-brand p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    text-align: center;
+    font-size: 1.1em;
+    
+}
+#nav-list{
+    margin:10px;
+}
+#nav-list a span{
+    font-size:1.8em;
+}
+#nav-list a{
+    text-align: center;
+    color: black;
+}
+#nav-list a:hover{
+    background: white;
+}
+#phone a{
+    text-align: right;
+    padding-bottom: 0px;
+}
+#phone div{
+    text-align: right;
+    padding-right: 15px;
+    color: darkgreen;
+}
+.navbar-header button.navbar-toggle, .navbar-header .iconbar{
+    border: 1px solid yellow;
+}
+.navbar-header button.navbar-toggle{
+    clear:both;
+    margin-top: -90px;
+}
+@media (max-width:768px){
+    .navbar-brand{
+    height: 100px;
+    padding-top: 10px;
+    }
+    .navbar-brand h1{
+        size: 1.5em;
+        margin-top:-5px;
+    }
+    #collapsable-nav a{
+            font-size: 1.2em;
+    }
+    #collapsable-nav a span{
+        font-size: 1em;
+    }
 }

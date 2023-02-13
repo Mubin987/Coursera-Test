@@ -9,19 +9,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
     <nav id="header-nav" class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="index.html" class="pull-left">
+                <a href="index.html" class="pull-left visible-md visible-lg visible-sm">
                     <div id="logo" alt="logo image"></div>
                 </a>
-                <div class="navbar-brand"><a href="index.html"><h1>Food, LLC</h1></a></div>
+                <div class="navbar-brand"><a href="index.html"><h1>Pizza on Wheels</h1></a>
+                <p>Fast Baker  Pizza Maker</p></div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a></li>
+                    <li id="phone" class="hidden-xs"><a href="phone:111-222-333"><span>111-222-333</span></a><div>Free Delivery</div></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <script src="/js/jquery-2.1.4.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/logic.js"></script>
+    </header>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/logic.js"></script>
 </body>
 </html>
