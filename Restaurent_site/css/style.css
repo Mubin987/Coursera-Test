@@ -1,9 +1,7 @@
-#header-nav{
-    background-color: gray;
-}
+
 h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color: red;
 }
 #logo {
     background: url('../logo.PNG') no-repeat;
@@ -11,6 +9,14 @@ h1{
     height: 144px;
     margin:10px 20px 10px 0px;
 }
-.navbar-brand a:hover ,.navbar-brand a:focus{
+.navbar-brand a:hover ,.navbar-brand a:focus,.navbar-brand a:visited{
+    text-decoration: none;
+}
+#header-nav{
+    background-color: gray;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
     text-decoration: none;
 }
