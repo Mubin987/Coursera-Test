@@ -1,16 +1,88 @@
-#header-nav{
-    background-color: gray;
-}
-h1{
+h1,h2{
+    margin-top: auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
 }
-#logo {
-    background: url('../logo.PNG') no-repeat;
-    width: 100px;
-    height: 100px;
-    margin:10px 20px 10px 0px;
-}
-.navbar-brand a:hover ,.navbar-brand a:focus{
+.navbar-brand a:hover ,.navbar-brand a:focus,.navbar-brand a:visited{
     text-decoration: none;
 }
+#header-nav{
+    background-color: gray;
+}
+li#subs.hidden-xs{
+    margin-top: 60px;
+    color: gray;
+}
+#nav-list a span{
+    font-size:1.8em;
+}
+#nav-list a{
+    text-align: center;
+    color: black;
+}
+#nav-list a:hover{
+    background: gray;
+}
+.navbar-header button.navbar-toggle, .navbar-header .iconbar{
+    border: 1px solid black;
+}
+.icon-bar{
+    border:1px solid #000;
+}
+.navbar-header button.navbar-toggle{
+    clear:both;
+    margin-top: -90px;
+}
+ul>li>#subs{
+    clear:both;
+    position:relative;
+    padding-top: 100px;
+    margin-top: -190px;
+}
+@media (max-width:767px){
+    .navbar-brand{
+    height: 100px;
+    padding-top: 10px;
+    }
+    #nav-list{
+        margin:10px;
+        background-color: white;
+    }
+    .navbar-brand h1{
+        size: 1.5em;
+        margin-top:-5px;
+    }
+    #collapsable-nav a{
+            font-size: 1.2em;
+    }
+    #collapsable-nav a span{
+        font-size: 1em;
+    }
+}
+@media (min-width: 1200px) {
+    
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #nav-list{
+        background-color:gray;
+    }
+  }
+  @media (max-width: 500px) {
+    .navbar-brand h1 { 
+      padding-top: 5px;
+      font-size: 6vw;
+    }
+  }
+  div.Headings{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #c{
+    color: #000;
+    float:left;
+    border:2px solid black;
+    padding:50px;
+    background-color:grey;
+    margin-top: 20px;
+  }
