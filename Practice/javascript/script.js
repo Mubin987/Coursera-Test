@@ -109,3 +109,5 @@ function func(mystring){
 }
 func("my string");
 func();
+
+//Objects
