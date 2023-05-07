@@ -1,0 +1,50 @@
+$(document).ready(function(){
+  // jQuery methods go here...
+});
+
+Here are some common DOM events:
+
+Mouse Events: click, dblclick, mouseenter, mouseleave
+Keyboard Events: keypress,keydown,keyup
+Form Events: submit,change,focus,blur
+Document/Window Events: load,resize,scroll,unload
+
+$("p").click(function(){
+  // action goes here!!
+  // action could be an alert/calculation or anything all written in pure JavaScript or using jQuery
+});
+
+$("#p1").hover(function(){
+  alert("You entered p1!");
+},
+function(){
+  alert("Bye! You now leave p1!");
+});
+
+$("p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  },
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  },
+  click: function(){
+    $(this).css("background-color", "yellow");
+  }
+});
+
+Already included both the jQuery library and the Animate.css library
+<script>
+  $(document).ready(function() {
+	$("button").addClass("animated animate__bounce");
+  });
+</script>
+
+.addClass
+.removeClass
+.prop("disabled",true)
+.css("property","value")
+.html('<tag>text</tag>')  ->with tags
+.text('text')  ->only add text
+.remove()
+.clone().appendTo()

@@ -1,0 +1,48 @@
+.bg-grey{
+    background-color: lightgray;
+}
+.navbar{
+    background-color: lightgray;
+}
+.logo{
+    position: relative;
+    top:40px;
+}
+.kid{
+    max-height: 300px;
+}
+.fever{
+    max-height: 500px;
+    max-width: fit-content;
+}
+.mt{
+    margin-top: 20%;
+}
+.row{
+    --bs-gutter-x: none;
+}
+.mdl{
+    width:100%;
+    margin-bottom: 5%;
+    padding:10px;
+}
+.modal{
+    height: 100%;
+    --bs-modal-width: 100%;
+}
+.modal-dialog{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    background-color: white;
+    margin: 0px;
+}
+.question .row {
+    display: none;
+}
+.question .active {
+    display: block;
+}
+ul li{
+    list-style: none;
+}

@@ -1,0 +1,104 @@
+var/let/const obj = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+string.indexOf('substring')
+string.length
+array.length
+var hello_string = 'HelloWorld';
+console.log(hello_string.slice(0,5)); // returns Hello, 5 here is not the length rather position value
+var hello_string = 'World is great';
+console.log(hello_string.replace('World', 'Universe')); //replace World with Universe
+string.toUpperCase()
+string.toLowerCase()
+
+ES6
+
+let Keyword //scope restrict
+
+const Keyword
+const a = 50;
+a = 60; // shows error. You cannot change the value of const.
+const LANGUAGES = ['Js', 'Ruby', 'Python', 'Go'];
+LANGUAGES = "Javascript"; // shows error.
+LANGUAGES.push('Java'); // Works fine.
+console.log(LANGUAGES); // ['Js', 'Ruby', 'Python', 'Go', 'Java']
+
+Arrow Function
+var newOne = () => {...} //If pass 1 param to 2 param function, value assigned to 1st
+
+For of loop
+let arr = [2,3,4,1];
+for (let value/element of arr) {
+	console.log(value); //prints number in new line
+}
+let string = "Javascript";
+for (let char of string) {
+	console.log(char);  //prints char in new line
+}
+
+Spread attributes
+let SumElements = (arr) => {
+}
+SumElements([10, 20, 40, 60, 90]);
+let SumElements = (...arr) => {
+}
+SumElements(10, 20, 40, 60, 90); // Note we are not passing array here. Instead we are passing the elements as arguments.
+
+Destructuring
+const address = {
+	street: 'Pallimon',
+	city: 'Kollam',
+	state: 'Kerala'
+};
+//ES5
+var street = address.street;
+var city = address.city;
+var state = address.state;
+//ES6
+const { street, city, state } = address;
+We can also destructure arrays but we use square brackets ([]) instead of curly braces ({}).
+//ES5
+var values = ['Hello', 'World'];
+var first = values[0];
+var last = values[1];
+//ES6
+const values = ['Hello', 'World'];
+const [first, last] = values;
+
+Classes
+class myClass{
+    constructor(name,age){
+		this.name=name;
+		this.age=age;
+	}
+}
+const Home= new myClass("said",20);console.log(Home.name)
+
+Static methods
+class Example {
+ static Callme() {
+	console.log("Static method");
+ }
+}
+
+arr1.concat(arr2)
+
+Example.Callme();
+
+Getters and Setters
+class People {
+	constructor(name) {
+		this.name = name;
+	}
+	
+	get Name() {			//space in b/w getter/setter name in ES6
+		return this.name;
+	}
+	
+	set Name(name) {
+		this.name = name;
+	}
+}
+
+let person = new People("Jon Snow");
+console.log(person.Name);		//instead of person.getName() & person.setName()
+person.Name = "Dany";
+console.log(person.Name);

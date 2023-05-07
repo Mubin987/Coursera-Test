@@ -1,0 +1,23 @@
+.bg-grey{
+    background-color: lightgray;
+}
+.navbar{
+    background-color: lightgray;
+}
+.logo{
+    position: relative;
+    top:40px;
+}
+.kid{
+    max-height: 300px;
+}
+.fever{
+    max-height: 500px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: 30%;
+}
+.mt{
+    margin-top: 30%;
+    margin-left: 10%;
+}
